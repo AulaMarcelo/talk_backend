@@ -46,6 +46,7 @@ model User {
   email         String?   @unique
   emailVerified DateTime?
   image         String?
+  prompt        String? @default("corriga algum erro que tiver desse texto e traga somente o texto corrigido")
   accounts      Account[]
   sessions      Session[]
   notes         Note[]
